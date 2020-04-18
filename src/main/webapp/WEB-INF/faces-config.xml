@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    		  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+    		  					  http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+    		  version="2.3">
+    		  
+	<application>
+	<!-- Za korištenje varijabli napisanih u messages.properties fileu kroz aplikaciju. -->
+		<resource-bundle>
+			<display-name>messages</display-name>
+			<base-name>hr.dkralj.mmt.messages</base-name>
+			<var>msg</var>
+		</resource-bundle>
+	
+	<!--  Fall back scenarij za browser (ako browser supporta npr. "it", JSF ce za trenutni session staviti "en" jer "it" nije suportan u aplikaciji).  -->
+		<locale-config>
+			<default-locale>en</default-locale>
+			<supported-locale>hr</supported-locale>
+		</locale-config>
+	</application>
+
+	<!-- Za debugiranje i logove.  --> 
+	<lifecycle>
+		<phase-listener>hr.dkralj.logging.DevPhaseListener</phase-listener>
+	</lifecycle>
+	
+
+	
+	<!-- Za exception handling (PrimeFaces i OmniFaces). -->
+	<factory>
+		<exception-handler-factory>
+			org.omnifaces.exceptionhandler.FullAjaxExceptionHandlerFactory
+		</exception-handler-factory>
+		<exception-handler-factory>
+			org.primefaces.application.exceptionhandler.PrimeExceptionHandlerFactory
+		</exception-handler-factory>
+	</factory>
+	<application>
+		<el-resolver>
+			org.primefaces.application.exceptionhandler.PrimeExceptionHandlerELResolver
+		</el-resolver>
+	</application>
+</faces-config>
