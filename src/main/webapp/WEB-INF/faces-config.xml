@@ -5,19 +5,13 @@
     		  					  http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
     		  version="2.3">
     		  
+    <!-- Za korištenje varijabli napisanih u messages.properties fileu kroz aplikaciju. -->
 	<application>
-	<!-- Za korištenje varijabli napisanih u messages.properties fileu kroz aplikaciju. -->
 		<resource-bundle>
 			<display-name>messages</display-name>
 			<base-name>hr.dkralj.mmt.messages</base-name>
 			<var>msg</var>
 		</resource-bundle>
-	
-	<!--  Fall back scenarij za browser (ako browser supporta npr. "it", JSF ce za trenutni session staviti "en" jer "it" nije suportan u aplikaciji).  -->
-		<locale-config>
-			<default-locale>en</default-locale>
-			<supported-locale>hr</supported-locale>
-		</locale-config>
 	</application>
 
 	<!-- Za debugiranje i logove.  --> 
@@ -25,9 +19,7 @@
 		<phase-listener>hr.dkralj.logging.DevPhaseListener</phase-listener>
 	</lifecycle>
 	
-
-	
-	<!-- Za exception handling (PrimeFaces i OmniFaces). -->
+	<!-- Za exception handling (PrimeFaces i AJAX). -->
 	<factory>
 		<exception-handler-factory>
 			org.omnifaces.exceptionhandler.FullAjaxExceptionHandlerFactory

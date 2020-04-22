@@ -1,3 +1,13 @@
 body {
+	margin: 0 auto;
 	background: url(../resources/images/black_background_pattern.jpg);
+}
+.textCenter {
+	text-align: center;	
+}
+body .ui-panel .ui-panel-content.divs {
+	background: #2f4f4f;
+	color: #ffd700;
+	border-radius: 0.5em;
+	border: none;
 }
