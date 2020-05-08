@@ -15,9 +15,35 @@
 </h:head>
 
 <h:body>
-	<ui:composition template="WEB-INF/templates/main.xhtml">
-		
-		
+	<ui:composition template="WEB-INF/templates/mainPocetna.xhtml">
+		<ui:define name="content">
+			<div class="p-grid">
+				<div class="p-col-12 p-xl-6">
+					<figure class="slike">
+						<h:graphicImage id="image1" library="images" name="D1.jpg" styleClass="images"
+							alt="#{msg['dino.pocetna.alt']}" />
+						<figcaption class="caption">
+							<h:link value="#{msg['dino.ime']}" outcome="/D1" />
+						</figcaption>
+					</figure>
+				</div>
+				<div class="p-col-12 p-xl-6">
+					<figure class="slike">
+						<h:graphicImage id="image2" library="images" name="A1.jpg" styleClass="images"
+							alt="#{msg['antonio.pocetna.alt']}" />
+						<figcaption class="caption">
+							<h:link value="#{msg['antonio.ime']}" outcome="/F1" />
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			
+			<script	src="https://code.jquery.com/jquery-3.5.1.js"
+	  				integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  				crossorigin="anonymous">
+			</script>
+			<h:outputScript library="js" name="script.js" />
+		</ui:define>
 	</ui:composition>
 	
 </h:body>
