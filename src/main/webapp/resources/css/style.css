@@ -1,3 +1,45 @@
+@media only screen and (max-width: 1500px) {
+	img {
+		width: 275px !important;
+		height: 275px !important;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	img {
+		width: 250px !important;
+		height: 250px !important;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	img {
+		width: 225px !important;
+		height: 225px !important;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	img {
+		width: 200px !important;
+		height: 200px !important;
+	}
+	.fontSize2em {
+		font-size: 1.5em !important;
+	}
+}
+@media only screen and (max-width: 550px) {
+	img {
+		width: 175px !important;
+		height: 175px !important
+	}
+}
+@media only screen and (max-width: 350px) {
+	img {
+		width: 100px !important;
+		height: 100px !important;
+	}
+}
 body {
 	margin: 0 auto;
 	background: url(../resources/images/black_background_pattern.jpg);
@@ -8,6 +50,38 @@ body {
 body .ui-panel .ui-panel-content.divs {
 	background: #2f4f4f;
 	color: #ffd700;
+	border-radius: 0.25em;
+	border: none;
+	margin: 0.25em auto;
+	padding: 0.25em 0.5em;
+}
+.divs {
+	background: #2f4f4f;
+	color: #ffd700;
 	border-radius: 0.5em;
 	border: none;
+	margin: 0.25em auto;
+}
+figure.slike {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+}
+img {
+	width: 300px;
+	height: 300px;
+}
+.fontSize2em {
+	font-size: 2em;
+}
+.img-full {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 !important;
+}
+body a {
+	color: #7CFC00;
 }
