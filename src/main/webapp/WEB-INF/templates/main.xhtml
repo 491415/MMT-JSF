@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html lang="#{activeLocale.languageTag}"
+	  xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	  xmlns:h="http://xmlns.jcp.org/jsf/html"
 	  xmlns:f="http://xmlns.jcp.org/jsf/core"
 	  xmlns:p="http://primefaces.org/ui"
 	  xmlns:o="http://omnifaces.org/ui"
 	  xmlns:of="http://omnifaces.org/functions" >
+  
+<f:view locale="#{activeLocale.current}">
 	  
 <h:head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" type="image/x-icon" href="#{resource['images/ferit.ico']}" />
 	<h:outputStylesheet library="css" name="style.css" />
+	<h:outputStylesheet library="css" name="primeflex.css" />
 	
-	<title>Bok</title> 
+	<title>#{msg['title']}</title> 
 </h:head>
 
 <h:body>
-	<div>
-		<ui:include src="/WEB-INF/fragments/header.xhtml" />
-	</div>
+	<header class="p-grid">
+		<div class="p-col-6 p-offset-3">
+			<ui:include src="/WEB-INF/fragments/header.xhtml" />
+		</div>
+	</header>
 	
-	
-	<div>
-		<ui:include src="/WEB-INF/fragments/footer.xhtml" />
-	</div>
+	<main class="p-grid">
+		<div class="divs textCenter p-col-6 p-offset-3">
+			<ui:insert name="content" />
+		</div>
+	</main>
 
+	<footer class="p-grid">
+		<div class="p-col-6 p-offset-3">
+			<ui:include src="/WEB-INF/fragments/footer.xhtml" />
+		</div>
+	</footer>
 </h:body>
+</f:view>
 </html>
