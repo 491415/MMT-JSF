@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:fn="http://xmlns.jcp.org/jsp/jstl/functions"
+	  xmlns:p="http://primefaces.org/ui"
+	  xmlns:o="http://omnifaces.org/ui"
+	  xmlns:of="http://omnifaces.org/functions">
+	  
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,maximum-scale=2" />
+	
+	<title>IGNORED BECAUSE OF UI:COMPOSITION</title>
+</h:head>
+
+<h:body>
+	<ui:composition template="WEB-INF/templates/main.xhtml">
+		<ui:param name="paramNaslov" value="#{msg['antonio.ime']}" />
+		<ui:define name="content">
+			<h1>#{msg['antonio.djelatnost.alt']}</h1>
+			<section class="marginBottom2em paddingAll">
+				<h:outputText value="#{msg['antonio.djelatnost.cetvrtiTekst']}" />
+			</section>
+			<section class="textCenter">
+				<h:graphicImage library="images" name="A3.gif"
+								styleClass="images" alt="#{msg['antonio.gif.alt']}" />
+			</section>
+		</ui:define>
+
+	</ui:composition>
+
+</h:body>
+</html>

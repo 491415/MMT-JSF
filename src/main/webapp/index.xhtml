@@ -12,28 +12,32 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<meta name="viewport" content="width=device-width,maximum-scale=2" />
+	<title>IGNORED BECAUSE OF UI:COMPOSITION</title>
 </h:head>
 
 <h:body>
 	<ui:composition template="WEB-INF/templates/mainPocetna.xhtml">
+		<ui:param name="paramNaslov" value="#{msg['title']}" />
 		<ui:define name="content">
 			<div class="p-grid">
 				<div class="p-col-12 p-xl-6">
-					<figure class="slike">
-						<h:graphicImage id="image1" library="images" name="D1.jpg" styleClass="images"
-							alt="#{msg['dino.pocetna.alt']}" />
-						<figcaption class="caption">
-							<h:link value="#{msg['dino.ime']}" outcome="/D1" />
-						</figcaption>
+					<figure class="textCenter">
+						<h:graphicImage id="image1" value="resources/images/D1.jpg"  alt="#{msg['dino.pocetna.alt']}" title="#{msg['dino.link.alt']}"/>
+						<h:link outcome="/D1">
+							<figcaption>
+								#{msg['dino.ime']}
+							</figcaption>
+						</h:link>
 					</figure>
 				</div>
 				<div class="p-col-12 p-xl-6">
-					<figure class="slike">
-						<h:graphicImage id="image2" library="images" name="A1.jpg" styleClass="images"
-							alt="#{msg['antonio.pocetna.alt']}" />
-						<figcaption class="caption">
-							<h:link value="#{msg['antonio.ime']}" outcome="/F1" />
-						</figcaption>
+					<figure class="textCenter">
+						<h:graphicImage id="image2" value="resources/images/A1.jpg"  alt="#{msg['antonio.pocetna.alt']}" title="#{msg['antonio.link.alt']}" />
+						<h:link outcome="/F1">
+							<figcaption>
+								#{msg['antonio.ime']}
+							</figcaption>
+						</h:link>
 					</figure>
 				</div>
 			</div>

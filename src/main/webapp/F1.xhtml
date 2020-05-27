@@ -12,15 +12,75 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<meta name="viewport" content="width=device-width,maximum-scale=2" />
+	
+	<title>IGNORED BECAUSE OF UI:COMPOSITION</title>
 </h:head>
 
 <h:body>
 	<ui:composition template="WEB-INF/templates/main.xhtml">
+		<ui:param name="paramNaslov" value="#{msg['antonio.ime']}" />
 		<ui:define name="content">
-			BOK
+			<div class="p-grid">
+				<div class="p-col-12 p-xl-6 textCenterXL">
+					<ul class="paddingLeft1em">
+						<li class="marginBottom2em">
+							<h:outputText value="#{msg['info.mjestoRodenja']}" />
+							<h:outputLink value="https://www.bjelovar.hr/" target="_blank">#{msg['antonio.mjestoRodenja']}</h:outputLink>
+						</li>
+						<br/>
+						<li class="marginBottom2em">
+							<h:outputText value="#{msg['info.datumRodenja']}: #{msg['antonio.datumRodenja']}" />
+						</li>
+						<br/>
+						<li class="marginBottom2em">
+							<h:outputText value="#{msg['info.mjestoStanovanja']}" />
+							<h:outputLink value="https://hr.wikipedia.org/wiki/Kostanjevac_(Berek)" target="_blank">#{msg['antonio.mjestoStanovanja']}</h:outputLink>
+						</li>
+						<br/>
+						<li class="marginBottom2em">
+							<h:outputText value="#{msg['info.os']}" />
+							<h:outputLink value="http://os-trnoviticki-popovac.skole.hr/" target="_blank">#{msg['antonio.os']}</h:outputLink>
+						</li>
+						<br/>
+						<li class="marginBottom2em">
+							<h:outputText value="#{msg['info.ss']}" />
+							<h:outputLink value="http://ss-tehnicka-bj.skole.hr/" target="_blank">#{msg['antonio.ss']}</h:outputLink>
+						</li>
+						<br/>
+						<li>
+							<h:outputText value="#{msg['info.fa']}" />
+							<h:outputLink value="https://www.ferit.unios.hr/" target="_blank">#{msg['antonio.fa']}</h:outputLink>
+						</li>
+					</ul>
+				</div>
+				<div class="p-col-12 p-xl-6 textCenterXL">
+					<figure class="slike">
+						<h:graphicImage library="images" name="A2.png"
+							styleClass="images" alt="#{msg['antonio.druga.alt']}" />
+					</figure>
+				</div>
+			</div>
+			<div class="p-grid">
+				<div class="p-col-12">
+					<h1>#{msg['antonio.djelatnost.naslov']}</h1>
+					<section class="marginBottom1em paddingAll preWrapWhiteSpace">
+						<h:outputText value="#{msg['antonio.djelatnost.prviTekst']}" />
+						<h:outputLink value="http://butterflyonline.com/world-top-20/" target="_blank"> #{msg['stranica.ovdje']}</h:outputLink>
+					</section>
+					<section class="textCenter">
+						<iframe class="video" src="https://www.youtube.com/embed/ZLN_tymcEJ4?autoplay=0">
+        				</iframe>
+					</section>
+					<section class="paddingAll preWrapWhiteSpace">
+						<h:outputText value="#{msg['antonio.djelatnost.drugiTekst']}" />
+						<h:outputLink value="http://www.uudrh.hr/uudrh-domijada/itemlist/category/2-op%C4%87enito.html" target="_blank">#{msg['antonio.domijada']}</h:outputLink>
+						<h:outputText value="#{msg['antonio.djelatnost.treciTekst']}" />
+					</section>
+					<h1><h:link outcome="/F2" value="#{msg['antonio.djelatnost.alt']}" /></h1>
+				</div>
+			</div>
 		</ui:define>
-		
 	</ui:composition>
-	
+
 </h:body>
 </html>
