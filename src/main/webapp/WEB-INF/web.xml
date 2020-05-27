@@ -18,32 +18,45 @@
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
   
+  <!-- Stranica koja se prikazuje po dolasku na web stranicu -->
    <welcome-file-list>
   	<welcome-file>index.xhtml</welcome-file>
   </welcome-file-list>
   
-   <!-- For hot deploy (In production set value to "-1") -->
+   <!-- Za hot deploy ( U produkciji staviti na "-1" )-->
   <context-param>
   	<param-name>javax.faces.FACELETS_REFRESH_PERIOD</param-name>
   	<param-value>0</param-value>
   </context-param>
   
-  <!-- For printing debugging information in the pages (In production set to "Production") -->
+  <!-- Za ispisivanje detaljnijih debugging informacija na stranicama ( U produkciji promijeniti na "Production" ) -->
   <context-param>
   	<param-name>javax.faces.PROJECT_STAGE</param-name>
   	<param-value>Development</param-value>
   </context-param>
   
-  <!-- For reducing sent data by removing comments from Facelets pages -->
+  <!-- Smanjenje poslanih podataka tako što se brišu komentari iz Facelets stranica -->
   <context-param>
   	<param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
   	<param-value>true</param-value>
   </context-param>
   
-  <!--  -->
+  <!-- PrimeFaces tema  -->
   <context-param>
   	<param-name>primefaces.THEME</param-name>
   	<param-value>nova-light</param-value>
   </context-param>
   
+  <!-- Extensionless URL-ovi -->
+  <context-param>
+    <param-name>org.omnifaces.FACES_VIEWS_SCAN_PATHS</param-name>
+    <param-value>/*.xhtml</param-value>
+  </context-param>
+  
+  <!-- Uklanja jsessionID iz URL-a -->
+  <session-config>
+    <tracking-mode>COOKIE</tracking-mode>
+  </session-config>
+
+
 </web-app>

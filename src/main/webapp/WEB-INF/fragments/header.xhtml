@@ -5,10 +5,10 @@
 	  xmlns:p="http://primefaces.org/ui">
 	  
 	  <div class="ui-panel ui-widget ui-widget-content ui-corner-all">
-	  	<div class="ui-panel-content ui-widget-content textCenter divs">
-	  		<div>
-	  			<h:outputText value="#{msg['header.omeni']}" />
-	  			<h:outputText value="#{msg['header.naslovna']}" />
+	  	<div class="ui-panel-content ui-widget-content divs">
+	  		<div class="fontSize285em">
+  				<h:link styleClass="marginLeft100px" value="#{msg['header.omeni']}" outcome="#{view.viewId.contains('D1') ? '/D1' : view.viewId.contains('D2') ? '/D1' : '/F1'}" title="#{msg['dino.link.alt']}" />
+	  			<h:link styleClass="floatRight marginRight100px" value="#{msg['header.naslovna']}" outcome="/index" title="#{msg['pocetna.stranica']}"/>
 	  		</div>
 	  	</div>
 	  </div>

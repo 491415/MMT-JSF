@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html lang="#{activeLocale.languageTag}"
-	  xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	  xmlns:h="http://xmlns.jcp.org/jsf/html"
 	  xmlns:f="http://xmlns.jcp.org/jsf/core"
 	  xmlns:p="http://primefaces.org/ui"
 	  xmlns:o="http://omnifaces.org/ui"
 	  xmlns:of="http://omnifaces.org/functions" >
-	  
-<f:view locale="#{activeLocale.current} ">
 	  
 <h:head>
 	<meta charset="UTF-8" />
@@ -18,28 +15,27 @@
 	<h:outputStylesheet library="css" name="style.css" />
 	<h:outputStylesheet library="css" name="primeflex.css" />
 	
-	<title>#{msg['title']}</title> 
+	<title>#{paramNaslov}</title> 
 </h:head>
 
 <h:body>
 	<header class="p-grid">
-		<div class="p-col-6 p-offset-3">
+		<div class="p-col-10 p-md-8 p-xl-6 p-offset-1 p-md-offset-2 p-xl-offset-3">
 			<ui:include src="/WEB-INF/fragments/headerPocetna.xhtml" />
 		</div>
 	</header>
 	
-	<main class="p-grid p-nogutter">
-		<div class="divs textCenter  p-col-6 p-offset-3">
+	<main class="p-grid ">
+		<div class="divs p-col-10 p-md-8 p-xl-6 p-offset-1 p-md-offset-2 p-xl-offset-3">
 			<ui:insert name="content" />
 		</div>
 	</main>
 	
 	<footer class="p-grid">
-		<div class="p-col-6 p-offset-3">
+		<div class="p-col-10 p-md-8 p-xl-6 p-offset-1 p-md-offset-2 p-xl-offset-3">
 			<ui:include src="/WEB-INF/fragments/footer.xhtml" />
 		</div>
 	</footer>
 
 </h:body>
-</f:view>
 </html>

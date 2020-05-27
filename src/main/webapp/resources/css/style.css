@@ -1,51 +1,205 @@
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1900px) {
+	img {
+		width: 400px !important;
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 1850px) {
+	img {
+		width: 375px !important;
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 1750px) {
+	img {
+		height: 350px !important;
+		width: 350px !important;
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.marginBottom2em {
+		margin-bottom: 1.75em !important;
+	}
+}
+
+@media only screen and (max-width: 1650px) {
+	img {
+		height: 325px !important;
+		width: 325px !important;
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.marginBottom2em {
+		margin-bottom: 1.5em !important;
+	}
+	.video {
+		width: 700px !important;
+		height: 400px !important;
+	}
+}
+
+@media only screen and (max-width: 1550px) {
+	img {
+		height: 300px !important;
+		width: 300px !important;
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.marginBottom2em {
+		margin-bottom: 1.25em !important;
+	}
+}
+@media only screen and (max-width: 1450px) {
 	img {
 		width: 275px !important;
 		height: 275px !important;
 	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.marginBottom2em {
+		margin-bottom: 1em !important;
+	}
+	.video {
+		width: 600px !important;
+		height: 300px !important;
+	}
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1350px) {
 	img {
 		width: 250px !important;
 		height: 250px !important;
 	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.marginBottom2em {
+		margin-bottom: 0.5em !important;
+	}
+	.video {
+		width: 550px !important;
+		height: 300px !important;
+	}
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
 	img {
-		width: 225px !important;
-		height: 225px !important;
+		width: 420px !important;
+		height: 370px !important;
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.textCenterXL {
+		text-align: center;
+	}
+	.fontSize285em {
+		font-size: 2em !important;
+	}
+	.video {
+		width: 700px !important;
+		height: 400px !important;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.video {
+		width: 600px !important;
+		height: 300px !important;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.video {
+		width: 500px !important;
+		height: 250px !important;
 	}
 }
 
 @media only screen and (max-width: 650px) {
 	img {
-		width: 200px !important;
-		height: 200px !important;
+		width: 370px !important;
+		height: 320px !important;
 	}
-	.fontSize2em {
-		font-size: 1.5em !important;
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	.marginLeft100px {
+		margin-left: 50px !important;
+	}
+	.marginRight100px {
+		margin-right: 50px !important;
+	}
+	@media only screen and (max-width: 950px) {
+	.video {
+		width: 400px !important;
+		height: 250px !important;
 	}
 }
-@media only screen and (max-width: 550px) {
+}
+@media only screen and (max-width: 600px) {
 	img {
-		width: 175px !important;
-		height: 175px !important
+		width: 320px !important;
+		height: 270px !important
+	}
+	.img-full {
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
 	}
 }
-@media only screen and (max-width: 350px) {
-	img {
-		width: 100px !important;
-		height: 100px !important;
-	}
-}
+
 body {
 	margin: 0 auto;
 	background: url(../resources/images/black_background_pattern.jpg);
-}
-.textCenter {
-	text-align: center;	
 }
 body .ui-panel .ui-panel-content.divs {
 	background: #2f4f4f;
@@ -54,6 +208,44 @@ body .ui-panel .ui-panel-content.divs {
 	border: none;
 	margin: 0.25em auto;
 	padding: 0.25em 0.5em;
+	font-family: "Times New Roman", Times, serif;
+}
+body a {
+	color: #7CFC00;
+}
+body a:hover {
+	color: #7CFC00;
+}
+body .p-md-8, body .p-col-12, body .p-xl-6 {
+	padding-left: 0;
+	padding-right: 0;
+}
+figure.slike {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+}
+img {
+	width: 420px;
+	height: 370px;
+}
+li {
+	list-style-type: none;
+}
+h1 {
+	text-align: center;
+}
+.textCenter {
+	text-align: center;	
+}
+.textJustify {
+	text-align: justify;
+}
+.textLeft {
+	text-align: left;	
+}
+.textRight {
+	text-align: right;	
 }
 .divs {
 	background: #2f4f4f;
@@ -62,26 +254,51 @@ body .ui-panel .ui-panel-content.divs {
 	border: none;
 	margin: 0.25em auto;
 }
-figure.slike {
-	vertical-align: top;
-	display: inline-block;
-	text-align: center;
+.floatRight {
+	float: right;
 }
-img {
-	width: 300px;
-	height: 300px;
+.fontSize115em {
+	font-size: 1.15em;
 }
-.fontSize2em {
-	font-size: 2em;
+.fontSize13em {
+	font-size: 1.3em;
+}
+.fontSize285em {
+	font-size: 2.85em;
 }
 .img-full {
 	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
 	margin: 0 !important;
+	top: 0;
+	left: 0;
 }
-body a {
-	color: #7CFC00;
+.marginBottom1em {
+	margin-bottom: 1em;
+}
+.marginBottom2em {
+	margin-bottom: 2em;
+}
+.marginTop2em {
+	margin-top: 2em;
+}
+.marginLeft100px {
+	margin-left: 100px;
+}
+.marginRight100px {
+	margin-right: 100px;
+}
+.paddingAll {
+	padding: 1em 1em;
+}
+.paddingLeft1em {
+	padding-left: 1em;
+}
+.preWrapWhiteSpace {
+	white-space: pre-wrap;
+}
+.video {
+	width: 800px;
+	height: 450px;
 }

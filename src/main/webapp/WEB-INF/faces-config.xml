@@ -7,8 +7,12 @@
     		  
     <!-- Za korištenje varijabli napisanih u messages.properties fileu kroz aplikaciju. -->
 	<application>
+		<locale-config>
+			<default-locale>en</default-locale>
+			<supported-locale>hr_HR</supported-locale>
+			<supported-locale>pt_BR</supported-locale>
+		</locale-config>
 		<resource-bundle>
-			<display-name>messages</display-name>
 			<base-name>hr.dkralj.mmt.messages</base-name>
 			<var>msg</var>
 		</resource-bundle>
